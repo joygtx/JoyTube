@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoyTube - Audio Downloader</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JoyTube - Download YouTube Audio</h1>
+        <input type="text" id="video-url" placeholder="Enter YouTube URL">
+        <select id="quality">
+            <option value="128">128 kbps</option>
+            <option value="192">192 kbps</option>
+            <option value="256">256 kbps</option>
+            <option value="320" selected>320 kbps</option>
+        </select>
+        <button onclick="downloadAudio()">Download</button>
+        <p id="status"></p>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
